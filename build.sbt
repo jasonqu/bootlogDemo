@@ -8,6 +8,10 @@ lazy val bootlogDemo = (project in file("."))
     version := "0.1-SNAPSHOT",
     scalaVersion := "2.10.4"
   )
+  // customize assets
+//  .settings(
+//    assetResourceMapping in compile += ("stylesheets/style.css" -> "assets/css/style.css")
+//  )
 
 
 //TODO chain generateDir and siteSourceDirectory
