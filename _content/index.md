@@ -6,9 +6,12 @@ tagline: "Supporting tagline"
 tags : []
 ---
 
-Read [TODO Quick Start]()
+欢迎阅读[bootlog](https://github.com/jasonqu/bootlog)的快速上手说明，完整的使用说明和文档请参见[bootlog in github](https://github.com/jasonqu/bootlog)。
+本示例的代码都保存在[bootlogDemo](https://github.com/jasonqu/bootlogDemo)项目中。
 
-Complete usage and documentation available at: [play-jekyll-bootstrap](https://github.com/jasonqu/play-jekyll-bootstrap)
+## bootlog是什么
+
+bootlog是基于sbt、twirl、pegdown、bootstrap和bootflat创建的一个静态博客生成器，目标用户是scala、java以及github使用者。
 
 ## Update configuration
 

@@ -1,23 +1,22 @@
-import sbt._
-
 site.settings
 
 lazy val bootlogDemo = (project in file("."))
-  .enablePlugins(BootLogPlugin)
   .settings(
     name := "bootlogDemo",
     organization := "com.github.bootlog",
     version := "0.1-SNAPSHOT",
     scalaVersion := "2.10.4"
   )
+  .enablePlugins(BootLogPlugin)
   .settings(
-    // customize assets
-    assetResourceMapping in Compile += ("stylesheets/style.css" -> "assets/css/style.css")
+    // customize assets, the 2nd parameter equals (baseDirectory.value / relativeFilePath)
+    //assetResourceMapping += ("stylesheets/style.css" -> "assets/css/style.css"),
+    // customize generateDir
+    //generateDir := baseDirectory.value / "out",
+    // or link generateDir with site's siteSourceDirectory
+    generateDir := SiteKeys.siteSourceDirectory.value
   )
 
+ghpages.settings
 
-//TODO chain generateDir and siteSourceDirectory
-//bootlogDemo.settings(
-//  generateDir := siteSourceDirectory.value
-//  //siteSourceDirectory := generateDir.value
-//)
+git.remoteRepo := "git@github.com:jasonqu/bootlogDemo.git"
