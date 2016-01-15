@@ -12,8 +12,8 @@ lazy val bootlogDemo = (project in file("."))
 
 site.settings
 
-// KEEP This, or else fonts file will not be copied by sbt-ghpages
-includeFilter in SiteKeys.makeSite := "*.html" | "*.css" | "*.png" | "*.jpg" | "*.gif" | "*.js" | "*.swf" | "*.ttf" | "*.woff" | "*.woff2"
+// KEEP This, or else fonts/rss file will not be copied by sbt-ghpages
+includeFilter in SiteKeys.makeSite := "*.html" | "*.css" | "*.png" | "*.jpg" | "*.gif" | "*.js" | "*.swf" | "*.ttf" | "*.woff" | "*.woff2" | "*.xml"
 
 ghpages.settings
 
