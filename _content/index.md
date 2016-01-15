@@ -6,12 +6,24 @@ tagline: "Supporting tagline"
 tags : []
 ---
 
-»¶Ó­ÔÄ¶Á[bootlog](https://github.com/jasonqu/bootlog)µÄ¿ìËÙÉÏÊÖËµÃ÷£¬ÍêÕûµÄÊ¹ÓÃËµÃ÷ºÍÎÄµµÇë²Î¼û[bootlog in github](https://github.com/jasonqu/bootlog)¡£
-±¾Ê¾ÀıµÄ´úÂë¶¼±£´æÔÚ[bootlogDemo](https://github.com/jasonqu/bootlogDemo)ÏîÄ¿ÖĞ¡£
+æ¬¢è¿é˜…è¯»[bootlog](https://github.com/jasonqu/bootlog)çš„å¿«é€Ÿä¸Šæ‰‹è¯´æ˜ï¼Œå®Œæ•´çš„ä½¿ç”¨è¯´æ˜å’Œæ–‡æ¡£è¯·å‚è§[bootlog in github](https://github.com/jasonqu/bootlog)ã€‚
+æœ¬ç¤ºä¾‹çš„ä»£ç éƒ½ä¿å­˜åœ¨[bootlogDemo](https://github.com/jasonqu/bootlogDemo)é¡¹ç›®ä¸­ã€‚
 
-## bootlogÊÇÊ²Ã´
+## bootlogæ˜¯ä»€ä¹ˆ
 
-bootlogÊÇ»ùÓÚsbt¡¢twirl¡¢pegdown¡¢bootstrapºÍbootflat´´½¨µÄÒ»¸ö¾²Ì¬²©¿ÍÉú³ÉÆ÷£¬Ä¿±êÓÃ»§ÊÇscala¡¢javaÒÔ¼°githubÊ¹ÓÃÕß¡£
+bootlogæ˜¯åŸºäºsbtã€twirlã€pegdownã€bootstrapå’Œbootflatåˆ›å»ºçš„ä¸€ä¸ªé™æ€åšå®¢ç”Ÿæˆå™¨ï¼Œç›®æ ‡ç”¨æˆ·æ˜¯scalaã€javaä»¥åŠgithubä½¿ç”¨è€…ã€‚
+
+bootlogæä¾›äº†ä¸¤ä¸ªç¤ºä¾‹ï¼Œåˆ†åˆ«å±•ç¤ºäº†bootstrapä¸»é¢˜å’Œbootflatçš„ä¸»é¢˜ TODO
+
+2åˆ†é’Ÿä¸Šæ‰‹æŒ‡å—
+
+conf æ–‡ä»¶ä»‹ç»
+sbt-ghpages å¯èƒ½å‡ºç°çš„é—®é¢˜
+
+å®ç°ä»‹ç»
+settingä»‹ç»
+
+
 
 ## Update configuration
 
@@ -31,10 +43,8 @@ The theme should reference these variables whenever needed.
 
 A lot of job need to be done, including:
 
-1. make play be able to compile md template smoothly so that the index page
-2. make it easy to [generate static site](https://github.com/sbt/sbt-site) and [git pushing](http://github.com/sbt/sbt-ghpages)
+1. make it easy to [generate static site](https://github.com/sbt/sbt-site) and [git pushing](http://github.com/sbt/sbt-ghpages)
 3. add extra features like play-doc support
-4. add examples
 
 Any suggestion or contribution is welcome.
 

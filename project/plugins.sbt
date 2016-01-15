@@ -1,6 +1,6 @@
 addSbtPlugin("com.github.bootlog" % "bootlog" % "0.1-SNAPSHOT")
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-site" % "0.8.2")
+addSbtPlugin("com.typesafe.sbt" % "sbt-site" % "0.8.1")
 
 resolvers += "jgit-repo" at "http://download.eclipse.org/jgit/maven"
 
