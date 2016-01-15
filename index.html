@@ -1,0 +1,133 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World!</title>
+    <meta name="description" content="a static site generator powered by sbt, twirl, bootstrap and bootflat">
+    <meta name="author" content="myname">
+    <!-- TODO description author -->
+    
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+     <link rel="stylesheet" media="all" href="/blog/stylesheets/style.css">  <link rel="stylesheet" media="all" href="/blog/stylesheets/bootstrap.3.3.6.min.css">  <link rel="stylesheet" media="all" href="/blog/stylesheets/bootflat-2.0.4.min.css">  <link rel="stylesheet" media="all" href="/blog/stylesheets/octicons.css"> 
+    <link rel="shortcut icon" type="image/png" href="/blog/images/favicon.png">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  
+    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="a static site generator powered by sbt, twirl, bootstrap and bootflat ATOM Feed">
+    <link href="rss.xml" type="application/rss+xml" rel="alternate" title="a static site generator powered by sbt, twirl, bootstrap and bootflat RSS Feed">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand glyphicon glyphicon-home" href="/"> Bootlog Demo</a>
+    </div>
+    <div id="navbar-top" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/blog/archive.html">Archive</a></li>
+        
+        <li><a href="/blog/categories.html">Categories</a></li>
+        
+        <li><a href="/blog/pages.html">Pages</a></li>
+        
+        <li><a href="/blog/tags.html">Tags</a></li>
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+    
+    <div class="container">
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Hello World! <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>2016-01-14 星期四</span>
+    </div>
+    <div class="content">
+      <p>欢迎阅读<a href="https://github.com/jasonqu/bootlog">bootlog</a>的快速上手说明，完整的使用说明和文档请参见<a href="https://github.com/jasonqu/bootlog">bootlog in github</a>。 本示例的代码都保存在<a href="https://github.com/jasonqu/bootlogDemo">bootlogDemo</a>项目中。</p>
+<h2>bootlog是什么</h2>
+<p>bootlog是基于sbt、twirl、pegdown、bootstrap和bootflat创建的一个静态博客生成器，目标用户是scala、java以及github使用者。</p>
+<h2>Update configuration</h2>
+<p>In <code>conf/blog.conf</code> remember to specify your own data:</p>
+<pre><code>site.title : My Blog =)
+author : {
+  name : Name Lastname
+  email : &quot;blah@email.test&quot;
+  github : username
+  twitter : username
+}
+</code></pre>
+<p>The theme should reference these variables whenever needed.</p>
+<h2>To-Do</h2>
+<p>A lot of job need to be done, including:</p>
+<ol>
+  <li>make play be able to compile md template smoothly so that the index page</li>
+  <li>make it easy to <a href="https://github.com/sbt/sbt-site">generate static site</a> and <a href="http://github.com/sbt/sbt-ghpages">git pushing</a></li>
+  <li>add extra features like play-doc support</li>
+  <li>add examples</li>
+</ol>
+<p>Any suggestion or contribution is welcome.</p>
+<h2>Sample Posts</h2>
+<p>This blog contains sample posts which help stage pages and blog data. When you don't need the samples anymore just delete the <code>_posts/core-samples</code> folder.</p>
+<pre><code>$ rm -rf _posts/core-samples
+</code></pre>
+<p>Here's a sample "posts list".</p>
+    </div>
+    
+  <!-- todo categories 参考post.html -->
+  <!-- todo tags 参考post.html -->
+    <hr>
+    <!-- pagination previous next 参考post.html -->
+    <hr>
+    <!-- comments -->
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2014 - 2015 myname
+          with help from <a href="https://github.com/jasonqu/bootlog" target="_blank">bootlog</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+    </div>
+    
+    <!-- {% include JB/analytics %} -->
+    <!-- todo google prettify refactor -->
+    
+     <script src="/blog/javascripts/jquery-1.11.3.min.js" type="text/javascript"></script>  <script src="/blog/javascripts/bootstrap-3.3.6.min.js" type="text/javascript"></script> 
+  </body>
+</html>
+
