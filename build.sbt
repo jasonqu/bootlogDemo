@@ -1,12 +1,4 @@
-site.settings
-
 lazy val bootlogDemo = (project in file("."))
-  .settings(
-    name := "bootlogDemo",
-    organization := "com.github.bootlog",
-    version := "0.1-SNAPSHOT",
-    scalaVersion := "2.10.4"
-  )
   .enablePlugins(BootLogPlugin)
   .settings(
     // customize assets, the 2nd parameter equals (baseDirectory.value / relativeFilePath)
@@ -17,6 +9,11 @@ lazy val bootlogDemo = (project in file("."))
     // or link generateDir with site's siteSourceDirectory
     generateDir := SiteKeys.siteSourceDirectory.value
   )
+
+site.settings
+
+// KEEP This, or else fonts file will not be copied by sbt-ghpages
+includeFilter in SiteKeys.makeSite := "*.html" | "*.css" | "*.png" | "*.jpg" | "*.gif" | "*.js" | "*.swf" | "*.ttf" | "*.woff" | "*.woff2"
 
 ghpages.settings
 

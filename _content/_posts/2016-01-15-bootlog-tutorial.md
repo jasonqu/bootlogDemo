@@ -1,9 +1,9 @@
 ---
 layout: index
 title: Bootlog快速上手
-category : index
-tagline: "Supporting tagline"
-tags : []
+category : tutorial
+tagline: ""
+tags : [intro, beginner, tutorial]
 ---
 
 欢迎阅读[bootlog](https://github.com/jasonqu/bootlog)的快速上手说明，完整的使用说明和文档请参见[bootlog in github](https://github.com/jasonqu/bootlog)。
@@ -32,12 +32,10 @@ bootlog是一个sbt插件，所以这里假设您使用sbt作为自己的常用�
 
 可以选择在github上直接fork[本工程](https://github.com/jasonqu/bootlogDemo)，或使用命令行：
 
-```
-git clone https://github.com/jasonqu/bootlogDemo blog
-cd blog
-git remote set-url origin git@github.com:USERNAME/blog.git
-git push origin master
-```
+    git clone https://github.com/jasonqu/bootlogDemo blog
+    cd blog
+    git remote set-url origin git@github.com:USERNAME/blog.git
+    git push origin master
 
 #### 第三步，修改参数
 
